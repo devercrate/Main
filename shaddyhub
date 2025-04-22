@@ -6,8 +6,6 @@ local plr = Players.LocalPlayer
 function GetGame()
     if ID == 111989938562194 then 
         return "brainroot"
-    elseif ID == 4766797229 then
-        return "mmd"
     elseif ID == 17334984034 then
         return "animeking"
     else
