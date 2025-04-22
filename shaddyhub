@@ -1,0 +1,21 @@
+local ID = game.PlaceId
+local baseURL = "https://raw.githubusercontent.com/devercrate/Main/refs/heads/main/"
+local Players = game:GetService("Players")
+local plr = Players.LocalPlayer
+
+function GetGame()
+    if ID == 111989938562194 then 
+        return "brainroot"
+    else
+        print("Game is not supported")
+        return nil
+    end
+end
+
+local gameScript = GetGame()
+
+if gameScript then
+    loadstring(game:HttpGet(baseURL .. gameScript))()
+end
+
+
